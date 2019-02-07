@@ -1,4 +1,5 @@
 require 'pry'
+#return the first name of that season's winner
 def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each do |ladies|
@@ -12,7 +13,7 @@ def get_first_name_of_season_winner(data, season)
   end
 end
 
-
+#returns the name of the woman who has that occupation
 def get_contestant_name(data, occupation)
   # code here
   data.each do |seasons, array|
@@ -26,6 +27,7 @@ def get_contestant_name(data, occupation)
   end
 end
 
+#return a count of the # of contestants who are from that hometown
 def count_contestants_by_hometown(data, hometown)
   # code here
   same_town = 0
@@ -40,7 +42,7 @@ def count_contestants_by_hometown(data, hometown)
   end
   return same_town
 end
-
+#returns the occupation of the 1st contestant from that hometown
 def get_occupation(data, hometown)
   # code here
   data.each do |seasons, array|
@@ -54,6 +56,7 @@ def get_occupation(data, hometown)
   end
 end
 
+#return the average age of all of the contestants for that season
 def get_average_age_for_season(data, season)
   # code here
   ave_age = 0

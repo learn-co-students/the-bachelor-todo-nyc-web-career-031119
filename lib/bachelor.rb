@@ -60,11 +60,6 @@ def get_average_age_for_season(data, season)
             ages << key["age"].to_f
            sum = ages.inject { |sum, x| sum+x}
                average = sum / ages.length
-      
-         
-        
-
-
 end 
 end
 end 

@@ -34,15 +34,13 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  occupations = []
     data.each do|seaon, value_arr|
       value_arr.each do|ppl|
          if ppl["hometown"] == hometown 
-           occupations << ppl["occupation"]
+           return ppl["occupation"]
          end
       end
     end  
-    return occupations[0]
   # code here
 end
 
